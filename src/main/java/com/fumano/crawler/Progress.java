@@ -18,8 +18,4 @@ public class Progress {
             System.out.printf("%d%c\n",completed * 100 / total, '%');
         }
     }
-
-    public boolean done() {
-        return completed == total;
-    }
 }

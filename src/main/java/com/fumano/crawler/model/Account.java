@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class Account {
 
-    private String puuid;
-    private String gameName;
-    private String tagLine;
+    private final String puuid;
+    private final String gameName;
+    private final String tagLine;
 
     public Account(String puuid, String gameName, String tagLine) {
         this.puuid = puuid;
@@ -14,32 +14,16 @@ public class Account {
         this.tagLine = tagLine;
     }
 
-    public Account() {
-
-    }
-
     public String getPuuid() {
         return puuid;
-    }
-
-    public void setPuuid(String puuid) {
-        this.puuid = puuid;
     }
 
     public String getGameName() {
         return gameName;
     }
 
-    public void setGameName(String gameName) {
-        this.gameName = gameName;
-    }
-
     public String getTagLine() {
         return tagLine;
-    }
-
-    public void setTagLine(String tagLine) {
-        this.tagLine = tagLine;
     }
 
     @Override

@@ -41,8 +41,6 @@ public record Config(String riotApiKey, String riotApiRegion, String crawlerSeed
         }
         try (var inputStream = new FileInputStream(CONFIG_FILE)) {
             properties.load(inputStream);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
