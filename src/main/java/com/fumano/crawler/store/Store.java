@@ -140,7 +140,7 @@ INSERT OR IGNORE INTO counts (name, value) VALUES
     }
 
     public void deleteAccount(String puuid) {
-        try (var statement = connection.prepareStatement("DELTE FROM accounts WHERE puuid = ?")) {
+        try (var statement = connection.prepareStatement("DELETE FROM accounts WHERE puuid = ?")) {
             statement.setString(1, puuid);
             statement.execute();
         } catch (SQLException e) {
